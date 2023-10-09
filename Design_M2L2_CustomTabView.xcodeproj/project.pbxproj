@@ -11,6 +11,8 @@
 		F1D168042ACBC62500BE3279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D168032ACBC62500BE3279 /* ContentView.swift */; };
 		F1D168062ACBC62600BE3279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1D168052ACBC62600BE3279 /* Assets.xcassets */; };
 		F1D168092ACBC62600BE3279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1D168082ACBC62600BE3279 /* Preview Assets.xcassets */; };
+		F1D168102ACD257700BE3279 /* NextTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D1680F2ACD257700BE3279 /* NextTab.swift */; };
+		F1D168122ACFC2EA00BE3279 /* CustomTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D168112ACFC2EA00BE3279 /* CustomTabBarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		F1D168032ACBC62500BE3279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F1D168052ACBC62600BE3279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1D168082ACBC62600BE3279 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1D1680F2ACD257700BE3279 /* NextTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextTab.swift; sourceTree = "<group>"; };
+		F1D168112ACFC2EA00BE3279 /* CustomTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				F1D168012ACBC62500BE3279 /* Design_M2L2_CustomTabViewApp.swift */,
 				F1D168032ACBC62500BE3279 /* ContentView.swift */,
+				F1D1680F2ACD257700BE3279 /* NextTab.swift */,
+				F1D168112ACFC2EA00BE3279 /* CustomTabBarButton.swift */,
 				F1D168052ACBC62600BE3279 /* Assets.xcassets */,
 				F1D168072ACBC62600BE3279 /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1D168102ACD257700BE3279 /* NextTab.swift in Sources */,
 				F1D168042ACBC62500BE3279 /* ContentView.swift in Sources */,
+				F1D168122ACFC2EA00BE3279 /* CustomTabBarButton.swift in Sources */,
 				F1D168022ACBC62500BE3279 /* Design_M2L2_CustomTabViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

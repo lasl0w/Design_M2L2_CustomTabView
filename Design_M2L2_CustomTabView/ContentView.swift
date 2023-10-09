@@ -7,7 +7,12 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+    
+    var tabIcons = ["person", "envelope", "magnifyingglass", "star.fill", "star"]
+    
     var body: some View {
         
         // Need a geometry reader to get the width of the space
@@ -16,7 +21,19 @@ struct ContentView: View {
                 Text("Hello, world!")
                     .padding()
                 Spacer()
+                // TODO: Why does it show both views?  ContentView & NextTab within.  Maybe b/c it's deprecated and/or they changed the behavior?
+                NavigationView() {
+                    NavigationLink(
+                        destination: NextTab(),
+                        label: { Text("Next Tab") }
+                    )
+                }
                 
+
+//                Button("Next Tab") {
+//                    print("next tab")
+//                    //NextTab()
+//                }
                 // Tab bar
                 VStack {
                     
@@ -30,11 +47,11 @@ struct ContentView: View {
                     // spacing: 0, says we will manage our own spacing
                     HStack(spacing: 0) {
                         Spacer()
-                        ForEach(0..<5, id: \.self) { _ in
+                        ForEach(0..<tabIcons.count, id: \.self) { index in
                             // space out slightly
                             VStack(spacing: 5) {
                                 // a single tab:  Icon + label
-                                Image(systemName: "magnifyingglass")
+                                Image(systemName: tabIcons[index])
                                 Text("Search")
                                     .font(.caption)
                             }
